@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./breakPoint.css" />
+    <link rel="stylesheet" href="./fonts-awesome-6.3.0/css/all.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="top">
+      <input
+        type="text"
+        id="name"
+        placeholder="!!! نام بازیکنان را وارد کنید"
+        required
+      />
+      <div class="buttonConteiner">
+        <button class="addButton" onclick="add()">اضافه کردن</button>
+        <button onclick="gameStart()" class="startButton">شروع بازی</button>
+        <form><input type="submit" class="submit" value="تازه سازی" /></form>  
+      </div>
+     </div>
+    <hr />
+    <div class="mainContainer">
+      <div class="before" onclick="goBefore()">
+        <i class="fas fa-arrow-rotate-left"></i>
+      </div>
+      <div class="main"></div>
+      <div class="next" onclick="goNext()">
+        <i class="fas fa-arrow-rotate-right"></i>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="score">
+        <span class="scoreSection" id="score1" onclick="addScore(1)"></span
+        ><span class="scoreSection" id="score2" onclick="addScore(2)"></span
+        ><span class="scoreSection" id="score3" onclick="addScore(3)"></span
+        ><span class="scoreSection" id="score4" onclick="addScore(4)"></span
+        ><span class="scoreSection" id="score5" onclick="addScore(5)"></span
+        ><span class="scoreSection" id="score6" onclick="addScore(6)"></span
+        ><span class="scoreSection" id="score7" onclick="addScore(7)"></span>
+      </div>
+      <div class="numberScore">
+        <span class="scoreSection" id="score10" onclick="addScore(10)"></span
+        ><span class="scoreSection" id="score20" onclick="addScore(20)"></span>
+      </div>
+      <div class="fouls">
+        fouls <span id="foulsSection" onclick="minusScore(4)">4</span
+        ><span id="foulsSection" onclick="minusScore(5)">5</span
+        ><span id="foulsSection" onclick="minusScore(6)">6</span
+        ><span id="foulsSection" onclick="minusScore(7)">7</span
+        ><span id="foulsSection" onclick="minusScore(10)">10</span
+        ><span id="foulsSection" onclick="minusScore(20)">20</span>
+      </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>

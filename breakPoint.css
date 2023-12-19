@@ -1,0 +1,58 @@
+/* smallest than 375px */
+
+@media screen and (max-width: 375px) {
+  .top {
+    flex-direction: column;
+    height: 120px;
+  }
+  .buttonConteiner {
+    width: 100%;
+  }
+  #name {
+    width: 80%;
+  }
+  .before,
+  .next {
+    margin: 5px;
+    padding: 10px;
+    font-size: 10px;
+  }
+  .card {
+    width: 40%;
+    height: 130px;
+  }
+  #nameS {
+    font-size: 25px;
+  }
+  .ss {
+    font-size: 25px;
+  }
+  .buttom {
+    height: 50px;
+    overflow: hidden;
+  }
+  .score{
+    flex-wrap: wrap;
+  }
+  .scoreSection {
+    padding: 5px;
+    margin: 5px;
+    height: 10px;
+    width: 10px;
+  }
+  .numberScore{
+    flex-direction: column;
+    padding: 7px;
+  }
+  .fouls{
+    font-size: 20px;
+  }
+  #foulsSection{
+    padding: 5px;
+    margin: 5px;
+    width: 30px;
+    height: 20px;
+    font-size: 15px;
+  }
+
+}
